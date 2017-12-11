@@ -1,0 +1,29 @@
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.exe.config
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.exe
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.pdb
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.csprojResolveAssemblyReference.cache
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Com_form.resources
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Test_form.resources
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Properties.Resources.resources
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.csproj.GenerateResource.Cache
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.exe
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.pdb
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Frock_form.resources
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Record_form.resources
+G:\visual studio 2012\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Task_form.resources
+D:\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.exe.config
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.exe
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.pdb
+D:\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.exe
+D:\Projects\TestAssistant\TestAssistant\bin\Debug\TestAssistant.pdb
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.csprojResolveAssemblyReference.cache
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Com_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Frock_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Record_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Properties.Resources.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.csproj.GenerateResource.Cache
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Order_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Addfrock_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.Mainform.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.MSG_form.resources
+D:\Projects\TestAssistant\TestAssistant\obj\Debug\TestAssistant.About_form.resources

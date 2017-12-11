@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://device.service.moresoft.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://device.service.moresoft.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://device.service.moresoft.com/">
+      <s:element name="es_Laser_coding">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WorkOrder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReelNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NGSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="es_Laser_codingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="es_Laser_codingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RESTGREATEMOSN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RESTGREATEMOSNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RESTGREATEMOSNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Check_Route">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Check_RouteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Check_RouteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_PcbID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_PcbIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_PcbIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_SNReturnID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_SNReturnIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_SNReturnIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_SN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_ERROR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_SNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_SNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_Before_Ageing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_Before_AgeingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_Before_AgeingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_After_Ageing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_TestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_After_AgeingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_After_AgeingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AUTO_PACK_ITEMSN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_MO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_BOXSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AUTO_PACK_ITEMSNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AUTO_PACK_ITEMSNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_BOX_CODE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_PROJECTNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_BOX_CODEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_BOX_CODEResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_CONTAINER_PC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_BOX_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_CONTAINER_SN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_Upload_CONTAINER_PCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_Upload_CONTAINER_PCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="es_Laser_Check_Para">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_MO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_USERNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="es_Laser_Check_ParaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="es_Laser_Check_ParaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_PCB_TEST">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_MO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EC_ALL_DATA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PCBID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Auto_PCB_TESTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auto_PCB_TESTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSNStateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSNStateDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSNStateDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSNData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineSN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSNDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadSNDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ASSYUPMATERIAL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="M_WORKSTATION_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_PRODUCT_SN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_MO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="M_EMP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ASSYUPMATERIALResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ASSYUPMATERIALResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AGV_TASKLIST">
+        <s:complexType />
+      </s:element>
+      <s:element name="AGV_TASKLISTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AGV_TASKLISTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AGVFINISH_TASK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rfid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AGVFINISH_TASKResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AGVFINISH_TASKResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFixtureTestData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFixtureTestDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFixtureTestDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="es_Laser_codingSoapIn">
+    <wsdl:part name="parameters" element="tns:es_Laser_coding" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_codingSoapOut">
+    <wsdl:part name="parameters" element="tns:es_Laser_codingResponse" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNSoapIn">
+    <wsdl:part name="parameters" element="tns:RESTGREATEMOSN" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNSoapOut">
+    <wsdl:part name="parameters" element="tns:RESTGREATEMOSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Check_Route" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Check_RouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_PcbID" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_PcbIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_SNReturnID" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_SNReturnIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_SN" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_SNResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_Before_Ageing" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_Before_AgeingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_After_Ageing" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_After_AgeingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNSoapIn">
+    <wsdl:part name="parameters" element="tns:AUTO_PACK_ITEMSN" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNSoapOut">
+    <wsdl:part name="parameters" element="tns:AUTO_PACK_ITEMSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODESoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_BOX_CODE" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODESoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_BOX_CODEResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_CONTAINER_PC" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_Upload_CONTAINER_PCResponse" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaSoapIn">
+    <wsdl:part name="parameters" element="tns:es_Laser_Check_Para" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaSoapOut">
+    <wsdl:part name="parameters" element="tns:es_Laser_Check_ParaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTSoapIn">
+    <wsdl:part name="parameters" element="tns:Auto_PCB_TEST" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTSoapOut">
+    <wsdl:part name="parameters" element="tns:Auto_PCB_TESTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSNStateData" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSNStateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadSNData" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadSNDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALSoapIn">
+    <wsdl:part name="parameters" element="tns:ASSYUPMATERIAL" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALSoapOut">
+    <wsdl:part name="parameters" element="tns:ASSYUPMATERIALResponse" />
+  </wsdl:message>
+  <wsdl:message name="AGV_TASKLISTSoapIn">
+    <wsdl:part name="parameters" element="tns:AGV_TASKLIST" />
+  </wsdl:message>
+  <wsdl:message name="AGV_TASKLISTSoapOut">
+    <wsdl:part name="parameters" element="tns:AGV_TASKLISTResponse" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKSoapIn">
+    <wsdl:part name="parameters" element="tns:AGVFINISH_TASK" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKSoapOut">
+    <wsdl:part name="parameters" element="tns:AGVFINISH_TASKResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFixtureTestData" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFixtureTestDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_codingHttpGetIn">
+    <wsdl:part name="WorkOrder" type="s:string" />
+    <wsdl:part name="ReelNo" type="s:string" />
+    <wsdl:part name="MSN" type="s:string" />
+    <wsdl:part name="NGSN" type="s:string" />
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_codingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNHttpGetIn">
+    <wsdl:part name="projectno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_ERROR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_TestResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_BOXSN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODEHttpGetIn">
+    <wsdl:part name="M_PROJECTNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODEHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="EmpNo" type="s:string" />
+    <wsdl:part name="M_BOX_SN" type="s:string" />
+    <wsdl:part name="M_CONTAINER_SN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaHttpGetIn">
+    <wsdl:part name="M_WORKSTATION" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_USERNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_EC_ALL_DATA" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_PCBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataHttpGetIn">
+    <wsdl:part name="SerialNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataHttpGetIn">
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="MachineSN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALHttpGetIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AGV_TASKLISTHttpGetIn" />
+  <wsdl:message name="AGV_TASKLISTHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKHttpGetIn">
+    <wsdl:part name="rfid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataHttpGetIn">
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_codingHttpPostIn">
+    <wsdl:part name="WorkOrder" type="s:string" />
+    <wsdl:part name="ReelNo" type="s:string" />
+    <wsdl:part name="MSN" type="s:string" />
+    <wsdl:part name="NGSN" type="s:string" />
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_codingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNHttpPostIn">
+    <wsdl:part name="projectno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RESTGREATEMOSNHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Check_RouteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_PcbIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_SNReturnIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_ERROR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_SNHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_Before_AgeingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_TestResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_After_AgeingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_BOXSN" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AUTO_PACK_ITEMSNHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODEHttpPostIn">
+    <wsdl:part name="M_PROJECTNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_BOX_CODEHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="EmpNo" type="s:string" />
+    <wsdl:part name="M_BOX_SN" type="s:string" />
+    <wsdl:part name="M_CONTAINER_SN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_Upload_CONTAINER_PCHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaHttpPostIn">
+    <wsdl:part name="M_WORKSTATION" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_USERNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="es_Laser_Check_ParaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_EC_ALL_DATA" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+    <wsdl:part name="M_PCBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Auto_PCB_TESTHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataHttpPostIn">
+    <wsdl:part name="SerialNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSNStateDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataHttpPostIn">
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="MachineSN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadSNDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALHttpPostIn">
+    <wsdl:part name="M_WORKSTATION_SN" type="s:string" />
+    <wsdl:part name="M_PRODUCT_SN" type="s:string" />
+    <wsdl:part name="M_MO" type="s:string" />
+    <wsdl:part name="M_EMP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ASSYUPMATERIALHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AGV_TASKLISTHttpPostIn" />
+  <wsdl:message name="AGV_TASKLISTHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKHttpPostIn">
+    <wsdl:part name="rfid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AGVFINISH_TASKHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataHttpPostIn">
+    <wsdl:part name="msg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFixtureTestDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="MesFrameWorkSoap">
+    <wsdl:operation name="es_Laser_coding">
+      <wsdl:input message="tns:es_Laser_codingSoapIn" />
+      <wsdl:output message="tns:es_Laser_codingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <wsdl:input message="tns:RESTGREATEMOSNSoapIn" />
+      <wsdl:output message="tns:RESTGREATEMOSNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <wsdl:input message="tns:Auto_Check_RouteSoapIn" />
+      <wsdl:output message="tns:Auto_Check_RouteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <wsdl:input message="tns:Auto_Upload_PcbIDSoapIn" />
+      <wsdl:output message="tns:Auto_Upload_PcbIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <wsdl:input message="tns:Auto_SNReturnIDSoapIn" />
+      <wsdl:output message="tns:Auto_SNReturnIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <wsdl:input message="tns:Auto_Upload_SNSoapIn" />
+      <wsdl:output message="tns:Auto_Upload_SNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <wsdl:input message="tns:Auto_Upload_Before_AgeingSoapIn" />
+      <wsdl:output message="tns:Auto_Upload_Before_AgeingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <wsdl:input message="tns:Auto_Upload_After_AgeingSoapIn" />
+      <wsdl:output message="tns:Auto_Upload_After_AgeingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <wsdl:input message="tns:AUTO_PACK_ITEMSNSoapIn" />
+      <wsdl:output message="tns:AUTO_PACK_ITEMSNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <wsdl:input message="tns:Auto_Upload_BOX_CODESoapIn" />
+      <wsdl:output message="tns:Auto_Upload_BOX_CODESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <wsdl:input message="tns:Auto_Upload_CONTAINER_PCSoapIn" />
+      <wsdl:output message="tns:Auto_Upload_CONTAINER_PCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <wsdl:input message="tns:es_Laser_Check_ParaSoapIn" />
+      <wsdl:output message="tns:es_Laser_Check_ParaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <wsdl:input message="tns:Auto_PCB_TESTSoapIn" />
+      <wsdl:output message="tns:Auto_PCB_TESTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <wsdl:input message="tns:GetSNStateDataSoapIn" />
+      <wsdl:output message="tns:GetSNStateDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <wsdl:input message="tns:UploadSNDataSoapIn" />
+      <wsdl:output message="tns:UploadSNDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <wsdl:input message="tns:ASSYUPMATERIALSoapIn" />
+      <wsdl:output message="tns:ASSYUPMATERIALSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <wsdl:input message="tns:AGV_TASKLISTSoapIn" />
+      <wsdl:output message="tns:AGV_TASKLISTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <wsdl:input message="tns:AGVFINISH_TASKSoapIn" />
+      <wsdl:output message="tns:AGVFINISH_TASKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">制具测试数据上传数据格式：JSON</wsdl:documentation>
+      <wsdl:input message="tns:UploadFixtureTestDataSoapIn" />
+      <wsdl:output message="tns:UploadFixtureTestDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MesFrameWorkHttpGet">
+    <wsdl:operation name="es_Laser_coding">
+      <wsdl:input message="tns:es_Laser_codingHttpGetIn" />
+      <wsdl:output message="tns:es_Laser_codingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <wsdl:input message="tns:RESTGREATEMOSNHttpGetIn" />
+      <wsdl:output message="tns:RESTGREATEMOSNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <wsdl:input message="tns:Auto_Check_RouteHttpGetIn" />
+      <wsdl:output message="tns:Auto_Check_RouteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <wsdl:input message="tns:Auto_Upload_PcbIDHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_PcbIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <wsdl:input message="tns:Auto_SNReturnIDHttpGetIn" />
+      <wsdl:output message="tns:Auto_SNReturnIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <wsdl:input message="tns:Auto_Upload_SNHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_SNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <wsdl:input message="tns:Auto_Upload_Before_AgeingHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_Before_AgeingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <wsdl:input message="tns:Auto_Upload_After_AgeingHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_After_AgeingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <wsdl:input message="tns:AUTO_PACK_ITEMSNHttpGetIn" />
+      <wsdl:output message="tns:AUTO_PACK_ITEMSNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <wsdl:input message="tns:Auto_Upload_BOX_CODEHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_BOX_CODEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <wsdl:input message="tns:Auto_Upload_CONTAINER_PCHttpGetIn" />
+      <wsdl:output message="tns:Auto_Upload_CONTAINER_PCHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <wsdl:input message="tns:es_Laser_Check_ParaHttpGetIn" />
+      <wsdl:output message="tns:es_Laser_Check_ParaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <wsdl:input message="tns:Auto_PCB_TESTHttpGetIn" />
+      <wsdl:output message="tns:Auto_PCB_TESTHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <wsdl:input message="tns:GetSNStateDataHttpGetIn" />
+      <wsdl:output message="tns:GetSNStateDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <wsdl:input message="tns:UploadSNDataHttpGetIn" />
+      <wsdl:output message="tns:UploadSNDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <wsdl:input message="tns:ASSYUPMATERIALHttpGetIn" />
+      <wsdl:output message="tns:ASSYUPMATERIALHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <wsdl:input message="tns:AGV_TASKLISTHttpGetIn" />
+      <wsdl:output message="tns:AGV_TASKLISTHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <wsdl:input message="tns:AGVFINISH_TASKHttpGetIn" />
+      <wsdl:output message="tns:AGVFINISH_TASKHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">制具测试数据上传数据格式：JSON</wsdl:documentation>
+      <wsdl:input message="tns:UploadFixtureTestDataHttpGetIn" />
+      <wsdl:output message="tns:UploadFixtureTestDataHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MesFrameWorkHttpPost">
+    <wsdl:operation name="es_Laser_coding">
+      <wsdl:input message="tns:es_Laser_codingHttpPostIn" />
+      <wsdl:output message="tns:es_Laser_codingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <wsdl:input message="tns:RESTGREATEMOSNHttpPostIn" />
+      <wsdl:output message="tns:RESTGREATEMOSNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <wsdl:input message="tns:Auto_Check_RouteHttpPostIn" />
+      <wsdl:output message="tns:Auto_Check_RouteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <wsdl:input message="tns:Auto_Upload_PcbIDHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_PcbIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <wsdl:input message="tns:Auto_SNReturnIDHttpPostIn" />
+      <wsdl:output message="tns:Auto_SNReturnIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <wsdl:input message="tns:Auto_Upload_SNHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_SNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <wsdl:input message="tns:Auto_Upload_Before_AgeingHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_Before_AgeingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <wsdl:input message="tns:Auto_Upload_After_AgeingHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_After_AgeingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <wsdl:input message="tns:AUTO_PACK_ITEMSNHttpPostIn" />
+      <wsdl:output message="tns:AUTO_PACK_ITEMSNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <wsdl:input message="tns:Auto_Upload_BOX_CODEHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_BOX_CODEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <wsdl:input message="tns:Auto_Upload_CONTAINER_PCHttpPostIn" />
+      <wsdl:output message="tns:Auto_Upload_CONTAINER_PCHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <wsdl:input message="tns:es_Laser_Check_ParaHttpPostIn" />
+      <wsdl:output message="tns:es_Laser_Check_ParaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <wsdl:input message="tns:Auto_PCB_TESTHttpPostIn" />
+      <wsdl:output message="tns:Auto_PCB_TESTHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <wsdl:input message="tns:GetSNStateDataHttpPostIn" />
+      <wsdl:output message="tns:GetSNStateDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <wsdl:input message="tns:UploadSNDataHttpPostIn" />
+      <wsdl:output message="tns:UploadSNDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <wsdl:input message="tns:ASSYUPMATERIALHttpPostIn" />
+      <wsdl:output message="tns:ASSYUPMATERIALHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <wsdl:input message="tns:AGV_TASKLISTHttpPostIn" />
+      <wsdl:output message="tns:AGV_TASKLISTHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <wsdl:input message="tns:AGVFINISH_TASKHttpPostIn" />
+      <wsdl:output message="tns:AGVFINISH_TASKHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">制具测试数据上传数据格式：JSON</wsdl:documentation>
+      <wsdl:input message="tns:UploadFixtureTestDataHttpPostIn" />
+      <wsdl:output message="tns:UploadFixtureTestDataHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MesFrameWorkSoap" type="tns:MesFrameWorkSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="es_Laser_coding">
+      <soap:operation soapAction="http://device.service.moresoft.com/es_Laser_coding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <soap:operation soapAction="http://device.service.moresoft.com/RESTGREATEMOSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Check_Route" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_PcbID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_SNReturnID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_SN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_Before_Ageing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_After_Ageing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <soap:operation soapAction="http://device.service.moresoft.com/AUTO_PACK_ITEMSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_BOX_CODE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_Upload_CONTAINER_PC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <soap:operation soapAction="http://device.service.moresoft.com/es_Laser_Check_Para" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <soap:operation soapAction="http://device.service.moresoft.com/Auto_PCB_TEST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <soap:operation soapAction="http://device.service.moresoft.com/GetSNStateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <soap:operation soapAction="http://device.service.moresoft.com/UploadSNData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <soap:operation soapAction="http://device.service.moresoft.com/ASSYUPMATERIAL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <soap:operation soapAction="http://device.service.moresoft.com/AGV_TASKLIST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <soap:operation soapAction="http://device.service.moresoft.com/AGVFINISH_TASK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <soap:operation soapAction="http://device.service.moresoft.com/UploadFixtureTestData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MesFrameWorkSoap12" type="tns:MesFrameWorkSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="es_Laser_coding">
+      <soap12:operation soapAction="http://device.service.moresoft.com/es_Laser_coding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <soap12:operation soapAction="http://device.service.moresoft.com/RESTGREATEMOSN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Check_Route" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_PcbID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_SNReturnID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_SN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_Before_Ageing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_After_Ageing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <soap12:operation soapAction="http://device.service.moresoft.com/AUTO_PACK_ITEMSN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_BOX_CODE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_Upload_CONTAINER_PC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <soap12:operation soapAction="http://device.service.moresoft.com/es_Laser_Check_Para" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <soap12:operation soapAction="http://device.service.moresoft.com/Auto_PCB_TEST" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <soap12:operation soapAction="http://device.service.moresoft.com/GetSNStateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <soap12:operation soapAction="http://device.service.moresoft.com/UploadSNData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <soap12:operation soapAction="http://device.service.moresoft.com/ASSYUPMATERIAL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <soap12:operation soapAction="http://device.service.moresoft.com/AGV_TASKLIST" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <soap12:operation soapAction="http://device.service.moresoft.com/AGVFINISH_TASK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <soap12:operation soapAction="http://device.service.moresoft.com/UploadFixtureTestData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MesFrameWorkHttpGet" type="tns:MesFrameWorkHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="es_Laser_coding">
+      <http:operation location="/es_Laser_coding" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <http:operation location="/RESTGREATEMOSN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <http:operation location="/Auto_Check_Route" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <http:operation location="/Auto_Upload_PcbID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <http:operation location="/Auto_SNReturnID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <http:operation location="/Auto_Upload_SN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <http:operation location="/Auto_Upload_Before_Ageing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <http:operation location="/Auto_Upload_After_Ageing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <http:operation location="/AUTO_PACK_ITEMSN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <http:operation location="/Auto_Upload_BOX_CODE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <http:operation location="/Auto_Upload_CONTAINER_PC" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <http:operation location="/es_Laser_Check_Para" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <http:operation location="/Auto_PCB_TEST" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <http:operation location="/GetSNStateData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <http:operation location="/UploadSNData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <http:operation location="/ASSYUPMATERIAL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <http:operation location="/AGV_TASKLIST" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <http:operation location="/AGVFINISH_TASK" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <http:operation location="/UploadFixtureTestData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MesFrameWorkHttpPost" type="tns:MesFrameWorkHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="es_Laser_coding">
+      <http:operation location="/es_Laser_coding" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RESTGREATEMOSN">
+      <http:operation location="/RESTGREATEMOSN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Check_Route">
+      <http:operation location="/Auto_Check_Route" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_PcbID">
+      <http:operation location="/Auto_Upload_PcbID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_SNReturnID">
+      <http:operation location="/Auto_SNReturnID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_SN">
+      <http:operation location="/Auto_Upload_SN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_Before_Ageing">
+      <http:operation location="/Auto_Upload_Before_Ageing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_After_Ageing">
+      <http:operation location="/Auto_Upload_After_Ageing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AUTO_PACK_ITEMSN">
+      <http:operation location="/AUTO_PACK_ITEMSN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_BOX_CODE">
+      <http:operation location="/Auto_Upload_BOX_CODE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_Upload_CONTAINER_PC">
+      <http:operation location="/Auto_Upload_CONTAINER_PC" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="es_Laser_Check_Para">
+      <http:operation location="/es_Laser_Check_Para" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto_PCB_TEST">
+      <http:operation location="/Auto_PCB_TEST" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSNStateData">
+      <http:operation location="/GetSNStateData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSNData">
+      <http:operation location="/UploadSNData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ASSYUPMATERIAL">
+      <http:operation location="/ASSYUPMATERIAL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGV_TASKLIST">
+      <http:operation location="/AGV_TASKLIST" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AGVFINISH_TASK">
+      <http:operation location="/AGVFINISH_TASK" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFixtureTestData">
+      <http:operation location="/UploadFixtureTestData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MesFrameWork">
+    <wsdl:port name="MesFrameWorkSoap" binding="tns:MesFrameWorkSoap">
+      <soap:address location="http://10.1.200.16:8088/MesFrameWork.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MesFrameWorkSoap12" binding="tns:MesFrameWorkSoap12">
+      <soap12:address location="http://10.1.200.16:8088/MesFrameWork.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MesFrameWorkHttpGet" binding="tns:MesFrameWorkHttpGet">
+      <http:address location="http://10.1.200.16:8088/MesFrameWork.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MesFrameWorkHttpPost" binding="tns:MesFrameWorkHttpPost">
+      <http:address location="http://10.1.200.16:8088/MesFrameWork.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
